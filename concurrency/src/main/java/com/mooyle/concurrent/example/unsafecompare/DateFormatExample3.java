@@ -27,10 +27,11 @@ public class DateFormatExample3 {
         final Semaphore semaphore = new Semaphore(ThreadTotal);
         final CountDownLatch countDownLatch = new CountDownLatch(clientTotal);
         for (int i = 0; i < clientTotal; i++) {
+            final int count = i;
             executorService.execute(() -> {
                 try {
                     semaphore.acquire();
-                    update();
+                    update(count);
                     semaphore.release();
                 } catch (Exception e) {
                     log.error("exception: ", e);
@@ -42,9 +43,9 @@ public class DateFormatExample3 {
         executorService.shutdown();
     }
 
-    private static void update() {
+    private static void update(int i) {
         try {
-            DateTime.parse("2019-08-06", dateTimeFormatter).toDate();
+            log.info("{} {}", i, DateTime.parse("2019-08-06", dateTimeFormatter).toDate());
         } catch (Exception e) {
             log.error("parse date error", e);
         }
