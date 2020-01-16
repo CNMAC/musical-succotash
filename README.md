@@ -1,2 +1,2 @@
-# musical-succotash
-wait~
+# mjava
+my java test case
