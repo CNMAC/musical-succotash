@@ -1,10 +1,9 @@
-package com.mooyle.guava.utilites;
+package com.mooyle.guava.utilities;
 
 import com.google.common.base.Joiner;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.io.Files;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 import java.io.File;

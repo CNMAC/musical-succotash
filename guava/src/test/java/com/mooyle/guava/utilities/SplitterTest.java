@@ -1,4 +1,4 @@
-package com.mooyle.guava.utilites;
+package com.mooyle.guava.utilities;
 
 import com.google.common.base.Splitter;
 import org.junit.Assert;
