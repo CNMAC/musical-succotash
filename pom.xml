@@ -16,7 +16,7 @@
 
     <properties>
         <netty.version>4.1.30.Final</netty.version>
-        <zookeeper.version>3.4.7</zookeeper.version>
+        <zookeeper.version>3.4.14</zookeeper.version>
         <google.guava.version>23.0</google.guava.version>
         <junit.version>4.12</junit.version>
     </properties>
